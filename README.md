@@ -1,1 +1,6 @@
-Live LINK - https://www.fusioncharts.com/demos/dashboards/smart-energy-monitoring-dashboard/
+Libraries used :
+React
+Bootstarp
+FusionCharts
+
+Live Link - https://www.fusioncharts.com/demos/dashboards/smart-energy-monitoring-dashboard/
