@@ -1,0 +1,403 @@
+@font-face {
+    font-family: 'Nunito Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Nunito Sans Light'), local('NunitoSans-Light'), url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc8WAc5tU1ECVZl_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Nunito Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc8WAc5tU1ECVZl_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Nunito Sans Semi-bold';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Nunito Sans Semi-bold'), local('NunitoSans-Semi-bold'), url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc8WAc5tU1ECVZl_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Nunito Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Nunito Sans Bold'), local('NunitoSans-Bold'), url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc8WAc5tU1ECVZl_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    font-family: Nunito Sans Regular;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.btn-link {
+    color: #FDFDFD;
+}
+
+#nav {
+    background-color: #181745;
+    color: white;
+    padding: 15px;
+}
+
+#content-body {
+    background: linear-gradient(to bottom left, #216E93, #21648A, #1F5881, #172D5B, #191C51);
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: Nunito Sans Light;
+}
+
+.left-options {
+    list-style: none;
+    padding: 0px;
+    margin: 0px -15px 0 9px;
+}
+
+.left-options li a {
+    display: block;
+    padding: 10px 0 10px 40px;
+    color: #8C8BA6;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-family: Nunito Sans Light;
+}
+
+.left-options li:before {
+    content: "";
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+
+.left-options li#Dashboard:before {
+    background-image: url('../Dashboard.svg');
+    background-repeat:no-repeat;
+    background-size: 24px 24px;
+}
+
+.left-options li#Cost:before {
+    background-image: url('../Cost.svg');
+    background-repeat:no-repeat;
+    background-size: 24px 24px;
+}
+
+.left-options li#Appliances:before {
+    background-image: url('../Appliances.svg');
+    background-repeat:no-repeat;
+    background-size: 24px 24px;
+}
+
+.left-options li#Usage-by-rooms:before {
+    background-image: url('../Usage_by_rooms.svg');
+    background-repeat:no-repeat;
+    background-size: 24px 24px;
+}
+
+.left-options li#Emissions:before {
+    background-image: url('../Emissions.svg');
+    background-repeat:no-repeat;
+    background-size: 24px 24px;
+}
+
+.left-options li:hover>a {
+    color: #FDFDFD;
+}
+
+.left-options li:hover:before {
+    opacity: 1;
+}
+
+.left-options li.active>a {
+    border-right: 3px solid #83E8A2;
+    box-shadow: 1px #83E8A2 inset;
+    color: #FDFDFD;
+}
+
+.left-options li.active:before {
+    opacity: 1;
+}
+
+.buttonwrapper {
+    list-style: none;
+    padding: 5px;
+    display: inline-flex;
+    width: auto;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.buttonwrapper li {
+    display: block;
+    float: left;
+    margin-left: 35px;
+    height: 35px;
+    width: 80px;
+}
+
+.buttonwrapper li:first-child {
+    margin-left: 0;
+}
+
+.buttonwrapper label {
+    display: block;
+    color: #FFFFFF;
+    font-family: Nunito Sans Light;
+    opacity: 1;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 8px 10px;
+    margin-bottom: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buttonwrapper li.active label {
+    background-color: #182142;
+    border-radius: 50px;
+}
+
+.chart-card {
+    background-color: rgba(29, 27, 65, 0.6);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.chart svg {
+    background-color: transparent !important;
+}
+
+.chart-title {
+    color: #FDFDFD;
+    font-family: Nunito Sans Light;
+    font-size: 17px;
+    padding: 7px 15px 7px 15px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#text1 {
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    #nav {
+        position: sticky;
+        top: 0rem;
+        z-index: 1000;
+        height: 100vh;
+    }
+    .logo {
+        padding-top: 25px;
+    }
+    .bd-links {
+        display: block !important;
+    }
+    nav {
+        padding-top: 66px;
+    }
+    .date-indicator {
+        font-size: 20px;
+        font-family: Nunito Sans Light;
+    }
+    .chart {
+        /* min-height: 31vh; */
+    }
+}
+
+@media (min-width: 1600px) {
+    nav {
+        padding-left: 20px;
+    }
+}
+
+.footer-text-1 {
+    font-family: Nunito Sans Regular;
+    font-size: 16px;
+}
+
+.footer-text-2 {
+    font-family: Nunito Sans Light;
+    font-size: 15px;
+}
+
+/* ------------------------------------------------------------- */
+
+.chart1-em {
+    width: 100%;
+}
+
+#e1, #e2 {
+    border: none;
+    cursor: pointer;
+    /* width:8%; */
+}
+
+/* ------------------------------------------ */
+
+/* Cost chart container */
+
+.chart1-co {
+    width: 100%;
+}
+
+/* ------------------------------------------ */
+
+/* Usage chart container */
+
+.chart1-us {
+    width: 100%;
+}
+
+/*-----------------------------------------*/
+
+/* Appliance chart container */
+
+.chart1-app {
+    width: 100%;
+}
+
+.kpi-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FDFDFD;
+    opacity: 0.8;
+    font-family: Nunito Sans Light;
+}
+
+.kpi-content {
+    font-size: 36px;
+    color: #FDFDFD;
+    font-family: Nunito Sans Semi-bold;
+}
+
+.t-head {
+    font-size: 36px;
+    color: #FDFDFD;
+    font-family: Nunito Sans Semi-bold;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 5;
+}
+
+.t-title {
+    font-size: 16px;
+    font-family: Nunito Sans Light;
+    text-align: left;
+    margin-right: 0px;
+    padding-right: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgba(253, 253, 253, 0.7);
+    width: 100%;
+}
+
+.t-content {
+    font-size: 16px;
+    color: rgba(253, 253, 253, 1);
+    font-family: Nunito Sans Regular !important;
+    float: right;
+    margin-left: -10px;
+    padding-left: 0;
+}
+
+#appliance-select {
+    width: 160px;
+    height: 30px;
+    background-color: #1E365D;
+    color: #FDFDFD;
+    opacity: 0.9;
+    border-color: #FDFDFD;
+    border-radius: 4px;
+}
+
+#e1, #e2, #u1, #u2, #c1, #c2, #a1, #a2 {
+    border: none;
+    cursor: pointer;
+    /* width:8%; */
+}
+
+@media (min-width:1200px) and (max-width:1600px) {
+    .db-chart>.col-lg-6 {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .db-chart>.col-lg-6 {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #content-body {
+        padding: 0 15px !important;
+    }
+    .left-options {
+        margin-top: 40px;
+    }
+    #us-chart-container, #em-chart-container {
+        width: 950px;   
+    }
+    .res-chart {
+        overflow-x: auto;
+    }
+    .res-chart--parent{
+        overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    }
+
+
+    ::-webkit-scrollbar:horizontal {
+    height: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgba(253, 253, 253, 1); 
+    }
+
+    ::-webkit-scrollbar-track {
+    border-radius: 0px;  
+    background-color: rgba(253, 253, 253, 0.2); 
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .time-control {
+        padding: 30px 5px !important;
+    }
+    .time-control>div {
+        margin-left: 0px !important;
+    }
+}
+
+#beta {
+    color: #E6526D;
+    font-size: 15px;
+    font-family: "Nunito Sans Light";
+    font-weight: lighter;
+}
+
+#usage-power-info{
+    max-width: 200px;
+    margin: 0 auto;
+}
